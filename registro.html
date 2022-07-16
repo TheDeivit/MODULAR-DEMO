@@ -60,7 +60,7 @@
                 <i class="fa-solid fa-map-location-dot"></i> Guadalajara
               </p>
             </div>
-            <h1 class="nombre-sitio">GDD Events</h1>
+            <h1 class="nombre-sitio">Digi Events</h1>
             <p class="slogan">El mejor sitio de <span>eventos</span></p>
           </div>
           <!-- informacion evento  -->
@@ -72,8 +72,8 @@
     <div class="barra">
       <div class="contenedor clearfix">
         <div class="logo">
-          <a title="GDD Events" href="index.html"
-            ><img src="img/logo.svg" alt="logo gddevents"
+          <a title="Digi Events" href="index.html"
+            ><img src="img/logo.svg" alt="logo digievents"
           /></a>
         </div>
 
@@ -395,19 +395,58 @@
                   <span class="autor">Harold Garcia</span>
                 </label>
               </div>
-            </div>
-            <!--CONTENIDO-DIA -->
-          </div>
-          <!-- CAJA -->
-        </div>
-        <!-- EVENTOS -->
+            </div><!--CONTENIDO-DIA -->
+          </div><!-- CAJA -->
+        </div><!-- EVENTOS -->
+
+        <div id="resumen" class="resumen">
+          <h3>Pago y Extras</h3>
+          <div class="caja clearfix">
+            <div class="extras">
+              <div class="orden">
+                <label for="camisa_evento">Camisa del Evento $10 <small>(Promoción 7% dto.)</small></label>
+                <input type="number" min="0" id="camisa_evento" size="3" placeholder="0">
+              </div> <!-- ORDEN -->
+
+              <div class="orden">
+                <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML, CSS, JS, etc)</small></label>
+                <input type="number" min="0" id="etiquetas" size="3" placeholder="0">
+              </div> <!-- ORDEN -->
+
+              <div class="orden">
+                <label for="regalo">Seleccione un regalo</label> <br>
+                <select id="regalo" required>
+                  <option value="">Seleccione un regalo --</option>
+                  <option value="ETI">Etiquetas</option>
+                  <option value="PUL">Pulsera</option>
+                  <option value="TER">Termo</option>
+                </select>
+              </div> <!-- ORDEN -->
+
+              <input type="button" id="calcular" class="button" value="Calcular">
+            </div> <!-- EXTRAS -->
+
+            <div class="total">
+              <p>Resumen: </p>
+              <div id="lista-productos">
+
+              </div>
+              <p>Total:</p>
+              <div id="suma-total">
+
+              </div>
+              <input id="btnRegistro" type="submit" class="button" value="Pagar">
+            </div> <!-- TOTAL -->
+
+          </div> <!-- CAJA -->
+        </div><!-- RESUMEN -->
       </form>
     </section>
 
     <footer class="site-footer">
       <div class="contenedor clearfix">
         <div class="footer-informacion">
-          <h3>Sobre <span>GDD Events</span></h3>
+          <h3>Sobre <span>Digi Events</span></h3>
           <p>
             Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium
             velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non
@@ -436,9 +475,6 @@
               ><i class="fa-brands fa-twitter" aria-hidden="true"></i
             ></a>
             <a href="#"
-              ><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i
-            ></a>
-            <a href="#"
               ><i class="fa-brands fa-youtube" aria-hidden="true"></i
             ></a>
             <a href="#"
@@ -448,7 +484,7 @@
         </div>
       </div>
 
-      <p class="copyright">Todos los derechos Reservados GDLWEBCAMP 2016.</p>
+      <p class="copyright">Todos los derechos Reservados GDLWEBCAMP 2022.</p>
 
       <!-- Begin MailChimp Signup Form -->
       <link
