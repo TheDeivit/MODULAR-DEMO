@@ -653,7 +653,6 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
-  background-color: green;
 }
 
 /** TESTIMONIALES **/
@@ -833,6 +832,11 @@ form.registro label {
   font-weight: bold;
 }
 
+form.registro label span{
+  color: #e33000;
+}
+
+
 h4 {
   text-align: center;
   text-transform: uppercase;
@@ -873,7 +877,7 @@ div.paquetes .tabla-precio input {
 
 .contenido-dia {
   padding: 20px;
-  /*display: none;*/
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -935,8 +939,32 @@ div.resumen input {
   margin: 10px auto;
 }
 
+#lista-productos {
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: none;
+}
+
+#suma-total {
+  text-align: center;
+  font-size: 2em;
+  color: #fe4918
+}
+
+input[disabled].button {
+  opacity: .5;
+}
+
+#error {
+  clear: both;
+  color: #e33000;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
 /* ==========================================================================
-   Helper classes
+   Helper clñlabelsses
    ========================================================================== */
 
 /*
