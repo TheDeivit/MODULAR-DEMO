@@ -247,6 +247,27 @@ nav.redes-sociales a:last-child {
   margin-right: 0;
 }
 
+nav.redes-sociales i:hover {
+  transform: translateY(-8px);
+  transition: .5s;
+}
+
+nav.redes-sociales #facebook:hover {
+  color: #3b5998;
+}
+
+nav.redes-sociales #twitter:hover {
+  color: #1DA1F2;
+}
+
+nav.redes-sociales #instagram:hover {
+  color: #e60083;
+}
+
+nav.redes-sociales #youtube:hover {
+  color: #FF0000;
+}
+
 @media only screen and (min-width: 768px) {
   div.informacion-evento {
     width: 70%;
